@@ -1,0 +1,28 @@
+uuid: 378982c6-41ca-4af4-bd2f-b5f33cc2ad0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_filone_di_ricerca
+    - node.type.attivita_di_ricerca
+    - taxonomy.vocabulary.filone_di_ricerca
+id: node.attivita_di_ricerca.field_filone_di_ricerca
+field_name: field_filone_di_ricerca
+entity_type: node
+bundle: attivita_di_ricerca
+label: 'Filone di ricerca'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      filone_di_ricerca: filone_di_ricerca
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

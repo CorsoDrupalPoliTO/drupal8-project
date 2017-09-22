@@ -1,0 +1,17 @@
+uuid: 2bdc6172-7249-4378-ae9e-32e18f26c5e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Attività di Ricerca'
+type: attivita_di_ricerca
+description: 'Content type for '' Attività di Ricerca''.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

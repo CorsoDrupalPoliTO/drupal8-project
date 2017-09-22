@@ -1,0 +1,34 @@
+uuid: 434b038e-a334-4c76-9e7e-72405ff070f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.attivita_di_ricerca.body
+    - field.field.node.attivita_di_ricerca.field_allegati
+    - field.field.node.attivita_di_ricerca.field_filone_di_ricerca
+    - field.field.node.attivita_di_ricerca.field_gruppi_di_ricerca
+    - field.field.node.attivita_di_ricerca.field_immagini
+    - node.type.attivita_di_ricerca
+  module:
+    - text
+    - user
+id: node.attivita_di_ricerca.teaser
+targetEntityType: node
+bundle: attivita_di_ricerca
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_allegati: true
+  field_filone_di_ricerca: true
+  field_gruppi_di_ricerca: true
+  field_immagini: true
+  links: true

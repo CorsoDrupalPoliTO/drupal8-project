@@ -1,0 +1,27 @@
+uuid: 6dab2a28-cf63-4a8f-9f4e-858e64e6eb0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_allegati
+    - node.type.attivita_di_ricerca
+  module:
+    - file
+id: node.attivita_di_ricerca.field_allegati
+field_name: field_allegati
+entity_type: node
+bundle: attivita_di_ricerca
+label: Allegati
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: attività/allegati
+  file_extensions: 'txt pdf doc'
+  max_filesize: '5 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

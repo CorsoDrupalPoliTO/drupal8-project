@@ -1,0 +1,22 @@
+uuid: ceebeae0-a085-487d-a4d5-64de87929137
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.attivita_di_ricerca
+  module:
+    - text
+id: node.attivita_di_ricerca.body
+field_name: body
+entity_type: node
+bundle: attivita_di_ricerca
+label: Descrizione
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

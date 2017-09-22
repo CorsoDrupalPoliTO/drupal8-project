@@ -1,0 +1,28 @@
+uuid: fb5ec029-8abd-4fa3-9dc5-f8947c696569
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gruppi_di_ricerca
+    - node.type.attivita_di_ricerca
+    - taxonomy.vocabulary.gruppo_di_ricerca
+id: node.attivita_di_ricerca.field_gruppi_di_ricerca
+field_name: field_gruppi_di_ricerca
+entity_type: node
+bundle: attivita_di_ricerca
+label: 'Gruppi di ricerca'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gruppo_di_ricerca: gruppo_di_ricerca
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
