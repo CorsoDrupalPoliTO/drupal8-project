@@ -1,0 +1,18 @@
+uuid: 0a396030-8b19-4756-940a-6c64906196a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.persona
+id: node.persona.title
+field_name: title
+entity_type: node
+bundle: persona
+label: 'Nome e Cognome'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

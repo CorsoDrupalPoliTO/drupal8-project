@@ -1,0 +1,23 @@
+uuid: e877ba95-173a-4c3e-ac75-4db518a69d87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sito_esterno
+    - taxonomy.vocabulary.gruppo_di_ricerca
+  module:
+    - link
+id: taxonomy_term.gruppo_di_ricerca.field_sito_esterno
+field_name: field_sito_esterno
+entity_type: taxonomy_term
+bundle: gruppo_di_ricerca
+label: 'Sito Esterno'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

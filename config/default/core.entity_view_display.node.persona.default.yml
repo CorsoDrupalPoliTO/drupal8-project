@@ -1,0 +1,55 @@
+uuid: 6fd3ac65-f734-4643-b5ee-5ce744e195cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.persona.field_curriculum
+    - field.field.node.persona.field_foto
+    - field.field.node.persona.field_gruppo_di_ricerca
+    - field.field.node.persona.field_mail
+    - field.field.node.persona.field_matricola
+    - image.style.large
+    - node.type.persona
+  module:
+    - file
+    - image
+    - user
+id: node.persona.default
+targetEntityType: node
+bundle: persona
+mode: default
+content:
+  field_curriculum:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_foto:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_gruppo_di_ricerca:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mail:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  field_matricola: true
+  links: true

@@ -1,0 +1,19 @@
+uuid: b1f56eb5-29af-489c-a7f0-d14128cd5b2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_matricola
+    - node.type.persona
+id: node.persona.field_matricola
+field_name: field_matricola
+entity_type: node
+bundle: persona
+label: Matricola
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,27 @@
+uuid: bfd2acfb-8cc9-4633-8d05-9a98b24c8c4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curriculum
+    - node.type.persona
+  module:
+    - file
+id: node.persona.field_curriculum
+field_name: field_curriculum
+entity_type: node
+bundle: persona
+label: Curriculum
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: persona/curriculum
+  file_extensions: 'txt pdf doc'
+  max_filesize: 5MB
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

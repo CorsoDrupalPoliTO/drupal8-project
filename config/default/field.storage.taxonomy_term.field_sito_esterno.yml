@@ -1,0 +1,19 @@
+uuid: 7c81dbaa-a054-4eef-863d-7a17054e0e77
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_sito_esterno
+field_name: field_sito_esterno
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,35 @@
+uuid: 69297d5e-540b-47c3-8e2d-d3a86489e711
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.gruppo_di_ricerca.field_sito_esterno
+    - taxonomy.vocabulary.gruppo_di_ricerca
+  module:
+    - link
+    - text
+id: taxonomy_term.gruppo_di_ricerca.default
+targetEntityType: taxonomy_term
+bundle: gruppo_di_ricerca
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sito_esterno:
+    weight: 1
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: b668605a-c033-48d2-9da8-d38bd710c5e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mail
+    - node.type.persona
+id: node.persona.field_mail
+field_name: field_mail
+entity_type: node
+bundle: persona
+label: Mail
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

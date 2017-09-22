@@ -1,0 +1,42 @@
+uuid: a477efb1-0835-4519-853c-1dde8a0302f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.persona.field_curriculum
+    - field.field.node.persona.field_foto
+    - field.field.node.persona.field_gruppo_di_ricerca
+    - field.field.node.persona.field_mail
+    - field.field.node.persona.field_matricola
+    - image.style.thumbnail
+    - node.type.persona
+  module:
+    - image
+    - user
+id: node.persona.teaser
+targetEntityType: node
+bundle: persona
+mode: teaser
+content:
+  field_foto:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+  field_mail:
+    type: basic_string
+    weight: 1
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_curriculum: true
+  field_gruppo_di_ricerca: true
+  field_matricola: true
+  links: true

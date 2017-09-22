@@ -1,0 +1,17 @@
+uuid: c8a8bc3a-35c0-40d0-8be0-dd9aa4752156
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Persona
+type: persona
+description: 'Insert "Persona"'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,9 @@
+uuid: 8c9917d9-6afc-48bb-af1e-cd365195a158
+langcode: en
+status: true
+dependencies: {  }
+name: 'Gruppo di Ricerca'
+vid: gruppo_di_ricerca
+description: ''
+hierarchy: 0
+weight: 0

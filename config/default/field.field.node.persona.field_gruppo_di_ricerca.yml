@@ -1,0 +1,28 @@
+uuid: 6a7be75f-5755-42d5-9dbb-fd2c04a6cd2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gruppo_di_ricerca
+    - node.type.persona
+    - taxonomy.vocabulary.gruppo_di_ricerca
+id: node.persona.field_gruppo_di_ricerca
+field_name: field_gruppo_di_ricerca
+entity_type: node
+bundle: persona
+label: 'Gruppo di ricerca'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gruppo_di_ricerca: gruppo_di_ricerca
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
