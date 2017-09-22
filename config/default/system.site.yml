@@ -1,0 +1,14 @@
+uuid: 11f8b48c-7f36-4816-8e3d-d919b4862db9
+name: 'Progetto Drupal8'
+mail: mauro.innocenti@polito.it
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
