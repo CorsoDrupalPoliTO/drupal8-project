@@ -1,0 +1,5 @@
+###
+## Installation with 'config_installer':
+#
+#> vendor/bin/drush -r web -l default site-install config_installer config_installer_sync_configure_form.sync_directory=DIR_CONFIG -y --site-name="Progetto Drupal8" --site-mail="MAIL" --account-mail="MAIL" --account-name="NAME" --account-pass="PASSWORD" --db-url="mysql://UTENTE:PASSWORD@localhost:3306/DATABASE" 
+
