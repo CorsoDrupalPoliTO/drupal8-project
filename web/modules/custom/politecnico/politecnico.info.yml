@@ -1,0 +1,7 @@
+name: Politecnico
+type: module
+description: Provides integration for other system and examples.
+core: 8.x
+package: Politecnico
+dependencies:
+  - views

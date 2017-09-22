@@ -1,0 +1,33 @@
+uuid: ba42ee69-0de8-4951-b4bb-49c19cb3a004
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.attivita_di_ricerca
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__attivita_di_ricerca_block_1
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:attivita_di_ricerca-block_1'
+settings:
+  id: 'views_block:attivita_di_ricerca-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      persona: persona
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
