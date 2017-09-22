@@ -1,0 +1,3 @@
+services:
+  politecnico.politecnico:
+    class: \Drupal\politecnico\Service\PolitecnicoService

@@ -1,0 +1,8 @@
+
+politecnico.default_controller_example:
+  path: '/politecnico/example'
+  defaults:
+    _controller: '\Drupal\politecnico\Controller\DefaultController::example'
+    _title: 'example'
+  requirements:
+    _permission: 'access content'
