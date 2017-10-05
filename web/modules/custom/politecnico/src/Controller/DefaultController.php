@@ -38,13 +38,19 @@ class DefaultController extends ControllerBase {
    * Example.
    */
   public function example() {
-    $items = $this->politecnicoPolitecnico->getData();
+    $items = $this->politecnicoPolitecnico->getData('000008');
+    dpm($items);
+
     return [
-      '#theme' => 'item_list',
-      '#list_type' => 'ul',
-      '#title' => 'My Recors',
-      '#items' => $items,
+      '#markup' => 'pippo',
     ];
+
+//    return [
+//      '#theme' => 'item_list',
+//      '#list_type' => 'ul',
+//      '#title' => 'My Recors',
+//      '#items' => $items,
+//    ];
   }
 
 }

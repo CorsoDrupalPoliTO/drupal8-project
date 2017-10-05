@@ -1,3 +1,8 @@
 services:
+  poli_demo.connection:
+    class: Drupal\Core\Database\Connection
+    factory: Drupal\Core\Database\Database::getConnection
+    arguments: ['default', 'poli_demo']
   politecnico.politecnico:
     class: \Drupal\politecnico\Service\PolitecnicoService
+    arguments: ['@poli_demo.connection', '@cache.default']

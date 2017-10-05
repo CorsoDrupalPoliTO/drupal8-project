@@ -1,0 +1,12 @@
+name: Example
+type: theme
+description: 'Example description.'
+#alt text: 'Example alt text.'
+#package: Custom
+base theme: bootstrap
+version: 8.x-1.0-beta1
+core: 8.x
+
+libraries:
+  - example/global-styling
+

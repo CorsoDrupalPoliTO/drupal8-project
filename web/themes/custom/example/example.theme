@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @param array $variables
+ */
+function example_preprocess_page(&$variables) {
+  $variables['logo'] = [
+    '#theme' => 'image',
+    '#attributes' => ['class' => 'drupal-logo'],
+    '#alt' => 'Drupal logo',
+    '#uri' => 'http://www.unimi.it/img/universitaInterno.jpg',
+  ];
+}
+
+//function example_preprocess_file_link(&$variables) {
+//  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+//    $content_type = $node->bundle();
+//    if ($content_type === 'article') {
+//      $variables['link']->setText('CV');
+//    }
+//  }
+//}
+
+//function example_preprocess_field(&$variables) {
+//  if($variables['element']['#bundle'] == 'article' &&
+//    $variables['element']['#field_name'] == 'field_attachments') {
+//    foreach($variables['items'] as &$item) {
+//      $item['content']['#file']->filename->set(0, 'CV');
+//    }
+//  }
+//}
+
+function example_theme_suggestions_node_alter(&$suggestions, $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    if ($content_type === 'page') {
+      $layout = $node->field_layout->value;
+
+      $suggestions[] = 'node__' . $layout;
+    }
+  }
+}

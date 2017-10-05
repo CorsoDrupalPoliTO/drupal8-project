@@ -12,8 +12,10 @@ interface PolitecnicoServiceInterface {
   /**
    * Return data from external table.
    *
+   * @param string $matricola
+   *
    * @return array
    */
-  public function getData();
+  public function getData($matricola);
 
 }

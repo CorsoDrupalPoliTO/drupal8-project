@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function politecnico_theme($existing, $type, $theme, $path) {
+  return [
+    'persona' => [
+      'variables' => ['persona' => NULL],
+    ],
+  ];
+}
